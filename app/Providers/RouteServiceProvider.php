@@ -17,7 +17,9 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/dashboard';
+    public const ADMIN_HOME = '/admin/dashboard';
+    public const USER_HOME = '/user/dashboard';
+    public const DOCTOR_HOME = '/doctor/dashboard';
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
@@ -48,5 +50,17 @@ class RouteServiceProvider extends ServiceProvider
         RateLimiter::for('api', function (Request $request) {
             return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
         });
+    }
+
+    public static function redirectToDashboard () {
+        if (auth()->user()->isA('admin')) {
+            return RouteServiceProvider::ADMIN_HOME;
+        } 
+        
+        if (auth()->user()->isA('user')) {
+            return RouteServiceProvider::USER_HOME;
+        } 
+
+        return RouteServiceProvider::DOCTOR_HOME;
     }
 }

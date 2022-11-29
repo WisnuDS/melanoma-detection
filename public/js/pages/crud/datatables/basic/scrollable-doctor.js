@@ -84,6 +84,31 @@ var KTDatatablesBasicScrollable = function() {
                     }
                 },
                 {
+                    data: 'doctor_diagnosis_result',
+                    title: 'Diagnosis Dokter',
+                    render: function(data, type, full, meta) {
+                        if (data == null) {
+                            return `<select class="form-control doctor_diagnosis_result" data-id="${full.id}">
+                                        <option value="belum" selected>Belum Diagnosis</option>
+                                        <option value="melanoma">Melanoma</option>
+                                        <option value="bukan melanoma">Bukan Melanoma</option>
+                                    </select>`;
+                        } else if (data == 'melanoma') {
+                            return `<select class="form-control doctor_diagnosis_result" data-id="${full.id}">
+                                        <option value="belum">Belum Diagnosis</option>
+                                        <option value="melanoma" selected>Melanoma</option>
+                                        <option value="bukan melanoma">Bukan Melanoma</option>
+                                    </select>`
+                        } else {
+                            return `<select class="form-control doctor_diagnosis_result" data-id="${full.id}">
+                                        <option value="belum">Belum Diagnosis</option>
+                                        <option value="melanoma">Melanoma</option>
+                                        <option value="bukan melanoma" selected>Bukan Melanoma</option>
+                                    </select>`
+                        }
+                    }
+                },
+                {
                     data: 'created_at',
                     render(h) {
                         return moment(h).fromNow();
@@ -91,7 +116,7 @@ var KTDatatablesBasicScrollable = function() {
                 },
                 // {data: 'Actions', responsivePriority: -1},
             ],
-            order: [[9, 'desc']],
+            order: [[10, 'desc']],
             scrollY: '100vh',
             scrollX: true,
             scrollCollapse: true,
@@ -260,6 +285,33 @@ var KTDatatablesBasicScrollable = function() {
 
 }();
 
+function updateDoctorDiagnosis(id, diagnosis) {
+    return axios.put('/doctor/diagnosis', {
+      id: id,
+      diagnosis: diagnosis
+    })
+    .then(function (response) {
+      Swal.fire({
+          title: "Success!",
+          text: "Berhasil Merubah Status Diagnosis",
+          icon: "success",
+          confirmButtonText: "OK"
+      });
+    })
+    .catch(function (error) {
+      Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Terjadi Kesalah Saat Merubah Diagnosis',
+          buttonsStyling: false,
+          confirmButtonText: "Ok, got it!",
+          customClass: {
+              confirmButton: "btn font-weight-bold btn-light-primary"
+          }
+      })
+    });
+  }
+
 jQuery(document).ready(function() {
     const table = KTDatatablesBasicScrollable.init();
     jQuery('#kt_datatable_search_query').on('keyup', function() {
@@ -267,5 +319,23 @@ jQuery(document).ready(function() {
         table.search(search).draw();
     });
 
-    globTable = table
+    table.on('draw', function() {
+        $('.doctor_diagnosis_result').on('change', function () {
+            var id = $(this).data('id');
+            var diagnosis = $(this).val();
+            Swal.fire({
+                title: 'Apakah anda yakin?',
+                text: "Anda akan mengubah diagnosis dokter",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Ya, ubah!',
+                cancelButtonText: 'Tidak, batalkan!',
+                reverseButtons: true
+            }).then((result) => {
+                return updateDoctorDiagnosis(id, diagnosis);
+            }).then((result) => {
+                table.draw();
+            });
+        })
+    })
 });

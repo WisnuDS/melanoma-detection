@@ -30,7 +30,7 @@
       <!--begin::Menu Nav-->
       <ul class="menu-nav">
         <li class="menu-item" aria-haspopup="true">
-          <a href="index.html" class="menu-link">
+          <a href="{{ route(auth()->user()->roles[0]->name . '.dashboard') }}" class="menu-link">
             <span class="svg-icon menu-icon">
               <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -46,23 +46,39 @@
           </a>
         </li>
         <li class="menu-section">
-          <h4 class="menu-text">Custom</h4>
+          <h4 class="menu-text">Menu Diagnosis</h4>
           <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
         </li>
         <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-          <a href="javascript:;" class="menu-link menu-toggle">
+          <a href="{{ route(auth()->user()->roles[0]->name . '.diagnosis') }}" class="menu-link menu-toggle">
             <span class="svg-icon menu-icon">
               <!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+              <!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Devices\Diagnostics.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <rect x="0" y="0" width="24" height="24" />
-                  <rect fill="#000000" x="4" y="4" width="7" height="7" rx="1.5" />
-                  <path d="M5.5,13 L9.5,13 C10.3284271,13 11,13.6715729 11,14.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,14.5 C4,13.6715729 4.67157288,13 5.5,13 Z M14.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,9.5 C20,10.3284271 19.3284271,11 18.5,11 L14.5,11 C13.6715729,11 13,10.3284271 13,9.5 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 Z M14.5,13 L18.5,13 C19.3284271,13 20,13.6715729 20,14.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,14.5 C13,13.6715729 13.6715729,13 14.5,13 Z" fill="#000000" opacity="0.3" />
+                    <rect x="0" y="0" width="24" height="24"/>
+                    <rect fill="#000000" opacity="0.3" x="2" y="3" width="20" height="18" rx="2"/>
+                    <path d="M9.9486833,13.3162278 C9.81256925,13.7245699 9.43043041,14 9,14 L5,14 C4.44771525,14 4,13.5522847 4,13 C4,12.4477153 4.44771525,12 5,12 L8.27924078,12 L10.0513167,6.68377223 C10.367686,5.73466443 11.7274983,5.78688777 11.9701425,6.75746437 L13.8145063,14.1349195 L14.6055728,12.5527864 C14.7749648,12.2140024 15.1212279,12 15.5,12 L19,12 C19.5522847,12 20,12.4477153 20,13 C20,13.5522847 19.5522847,14 19,14 L16.118034,14 L14.3944272,17.4472136 C13.9792313,18.2776054 12.7550291,18.143222 12.5298575,17.2425356 L10.8627389,10.5740611 L9.9486833,13.3162278 Z" fill="#000000" fill-rule="nonzero"/>
+                    <circle fill="#000000" opacity="0.3" cx="19" cy="6" r="1"/>
+                </g>
+              </svg><!--end::Svg Icon--></span>
+              <!--end::Svg Icon-->
+            </span>
+            <span class="menu-text">Diagnosis</span>
+          </a>
+        </li>
+        <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+          <a href="{{ route(auth()->user()->roles[0]->name . '.histories') }}" class="menu-link menu-toggle">
+            <span class="svg-icon menu-icon">
+              <!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Communication\Archive.svg-->
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect x="0" y="0" width="24" height="24"/>
+                    <path d="M4.5,3 L19.5,3 C20.3284271,3 21,3.67157288 21,4.5 L21,19.5 C21,20.3284271 20.3284271,21 19.5,21 L4.5,21 C3.67157288,21 3,20.3284271 3,19.5 L3,4.5 C3,3.67157288 3.67157288,3 4.5,3 Z M8,5 C7.44771525,5 7,5.44771525 7,6 C7,6.55228475 7.44771525,7 8,7 L16,7 C16.5522847,7 17,6.55228475 17,6 C17,5.44771525 16.5522847,5 16,5 L8,5 Z" fill="#000000"/>
                 </g>
               </svg>
               <!--end::Svg Icon-->
             </span>
-            <span class="menu-text">Applications</span>
+            <span class="menu-text">Riwayat Diagnosis</span>
           </a>
         </li>
       </ul>

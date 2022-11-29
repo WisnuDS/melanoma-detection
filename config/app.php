@@ -58,6 +58,8 @@ return [
 
     'asset_url' => env('ASSET_URL'),
 
+    'api_url' => env('API_URL', 'http://localhost:7777'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -185,7 +187,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class,
         /*
          * Application Service Providers...
          */

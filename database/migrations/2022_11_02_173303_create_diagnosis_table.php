@@ -13,15 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('diagnosis', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->date('birth_date');
-            $table->tinyText('gender')->comment('L/P');
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('gender');
+            $table->string('age');
+            $table->string('skin_lession_position');
+            $table->string('image_path');
+            $table->string('machine_diagnosis_result');
+            $table->string('doctor_diagnosis_result')->nullable();
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('diagnosis');
     }
 };
