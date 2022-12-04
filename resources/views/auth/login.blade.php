@@ -78,7 +78,7 @@
 							<div class="login-form login-signup pt-11">
 								<!--begin::Form-->
 								<form class="form" novalidate="novalidate" action="{{ route('register') }}" method="POST" id="kt_login_signup_form">
-                                    @csrf
+									@csrf
 									<!--begin::Title-->
 									<div class="text-center pb-8">
 										<h2 class="font-weight-bolder text-dark font-size-h2 font-size-h1-lg">Sign Up</h2>
@@ -103,6 +103,21 @@
 									<!--begin::Form group-->
 									<div class="form-group">
 										<input class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6" type="password" placeholder="Confirm password" name="password_confirmation" autocomplete="off" />
+									</div>
+									<!--end::Form group-->
+									<!--begin::Form group-->
+									<div class="form-group">
+										<input type="date" class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6" type="password" placeholder="Tanggal Lahir" name="birth_date" autocomplete="off" />
+									</div>
+									<!--end::Form group-->
+									<!--begin::Form group-->
+									<div class="form-group">
+										<select class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6" name="gender" id="gender">
+											<option value="" disabled>Pilih Salah Satu</option>
+											<option value="L">Laki-laki</option>
+											<option value="P">Perempuan</option>
+										</select>
+										{{-- <input type="date" class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6" type="password" placeholder="Tanggal Lahir" name="birth_date" autocomplete="off" /> --}}
 									</div>
 									<!--end::Form group-->
 									<!--begin::Form group-->

@@ -51,7 +51,10 @@ class PredictionController extends Controller
     public function getAllDiagnosis()
     {
         try {
-            $diagnosis = Diagnosis::with('user')->where('createdBy', auth()->id());
+            $diagnosis = Diagnosis::with('user');
+            if (!auth()->user()->isA('admin')) {
+                $diagnosis->where('createdBy', auth()->id());
+            }
             return DataTables::of($diagnosis)
                 ->make(true);
         } catch (Exception $error) {

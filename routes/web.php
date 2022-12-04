@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PredictionController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserManagementController;
 use App\Models\Diagnosis;
 use Illuminate\Support\Facades\Route;
 
@@ -40,6 +41,16 @@ Route::prefix('admin')
         Route::get('/profile', function () {return view('profile');})->name('profile');
         Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::put('/profile/password', [ProfileController::class, 'updatePassword'])->name('profile.update.password');
+        Route::get('/histories', function () {return view('histories');})->name('histories');
+        Route::get('/diagnosis', function () {return view('diagnosis');})->name('diagnosis');
+        Route::put('/diagnosis', [PredictionController::class, 'updateDoctorDiagnosis'])->name('update.diagnosis');
+        Route::get('/users/data', [UserManagementController::class, 'table'])->name('users.data');
+        Route::get('/users', [UserManagementController::class, 'index'])->name('users.view');
+        Route::get('/users/create', [UserManagementController::class, 'create'])->name('users.create');
+        Route::post('/users/store', [UserManagementController::class, 'store'])->name('users.store');
+        Route::get('/users/{id}/edit', [UserManagementController::class, 'edit'])->name('users.edit');
+        Route::put('/users/{id}', [UserManagementController::class, 'update'])->name('users.update');
+        Route::delete('/users/{id}/delete', [UserManagementController::class, 'destroy'])->name('users.delete');
     });
 Route::prefix('doctor')
     ->name('doctor.')
