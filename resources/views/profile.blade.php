@@ -79,7 +79,7 @@
 <div class="d-flex flex-column-fluid">
   <!--begin::Container-->
   <div class="container">
-    <form class="form" action="{{ route('user.profile.update.password') }}" method="POST">
+    <form class="form" action="{{ route(auth()->user()->roles[0]->name . '.profile.update.password') }}" method="POST">
       @method('PUT')
       @csrf
       <!--begin::Profile Personal Information-->
