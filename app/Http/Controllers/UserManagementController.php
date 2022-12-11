@@ -30,7 +30,7 @@ class UserManagementController extends Controller
                 'email' => 'required|string|email|max:255|unique:users',
                 'birth_date' => 'required|date',
                 'gender' => 'required|string|in:L,P',
-                'role' => 'required|string|in:admin,user'
+                'role' => 'required|string|in:admin,doctor'
             ]);
 
             if ($validator->fails()) {
