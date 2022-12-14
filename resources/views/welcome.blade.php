@@ -46,7 +46,6 @@
                                 </li>
                                 <li><a href="#about">About</a>
                                 </li>
-                                <li><a href="#services">Services</a>
                                 </li>
                                 <li><a href="#gallery">Gallery</a>
                                 </li>
@@ -74,8 +73,8 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-xl-7">
-                      <h1 data-caption-animate="fadeInUpSmall"><span>MedClinic</span></h1>
-                      <h3 data-caption-animate="fadeInUpSmall" data-caption-delay="200">Quality Medical Services</h3>
+                      <h1 data-caption-animate="fadeInUpSmall"><span>Meldec</span></h1>
+                      <h3 data-caption-animate="fadeInUpSmall" data-caption-delay="200">Menghadirkan Deteksi Dini Melanoma</h3>
                       <div class="group-lg group-middle" data-caption-animate="fadeInUpSmall" data-caption-delay="250"><img src="{{asset('images/awards-5-120x101.png')}}" alt="" width="120" height="101"/><img src="images/awards-6-120x101.png" alt="" width="120" height="101"/><img src="images/awards-7-120x103.png" alt="" width="120" height="103"/><img src="images/awards-8-120x103.png" alt="" width="120" height="103"/>
                       </div>
                     </div>
@@ -88,7 +87,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-xl-7">
-                      <h2 data-caption-animate="fadeInLeftSmall">Providing extensive<br class="d-none d-lg-block"> family healthcare</h2><a class="button button-primary" data-caption-animate="fadeInLeftSmall" data-caption-delay="200" href="index.html#">Contact us</a>
+                      <h2 data-caption-animate="fadeInLeftSmall">Berbasis AI<br class="d-none d-lg-block"> untuk anda dan keluarga</h2><a href="{{ route('login') }}" class="button button-primary" data-caption-animate="fadeInLeftSmall" data-caption-delay="200" href="index.html#">Login / Register</a>
                     </div>
                   </div>
                 </div>
@@ -99,8 +98,8 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-xl-7">
-                      <h2 data-caption-animate="fadeInUpSmall">Top-Notch Medical Service</h2>
-                      <h5 class="text-width-2 block" data-caption-animate="fadeInUpSmall" data-caption-delay="200">Our Medical Center offers the best medical service in the area.</h5>
+                      <h2 data-caption-animate="fadeInUpSmall">Deteksi Terpercaya</h2>
+                      <h5 class="text-width-2 block" data-caption-animate="fadeInUpSmall" data-caption-delay="200">Kami menghadirkan deteksi terpercaya berbasis Kecerdasan buatan</h5>
                       <div class="group-lg group-middle"><a class="button button-primary" data-caption-animate="fadeInUpSmall" data-caption-delay="350" href="index.html#" data-custom-scroll-to="services">See Services</a></div>
                     </div>
                   </div>
@@ -116,16 +115,16 @@
         <div class="container">
           <div class="row row-50">
             <div class="col-md-6 col-lg-4">
-              <h4 class="heading-decorated">About us</h4>
-              <p>MedClinic centers on diagnosing and treating patients of all ages, while emphasizing preventative medicine and the overall health and wellness of its patients. The clinic features state-of-the-art equipment and trained staff that will optimize the care of each patient. We understand that there are many factors that can affect health, including exercise, diet, and heredity.</p>
-              <p>We are committed to providing the highest quality patient care. Our dedication to excellence, compassion, and innovation is rooted in our devotion to the art and science of healing, which supports every aspect of our mission.</p><a class="button button-primary" href="index.html#">read more</a>
+              <h4 class="heading-decorated">Tentang Kami</h4>
+              <p>Website deteksi dini melanoma berbasis AI yang kami kembangkan merupakan platform yang menyediakan solusi teknologi terdepan dalam mendeteksi melanoma pada tahap awal. Kami menyediakan fitur yang mudah digunakan dan terjangkau bagi masyarakat, sehingga dapat membantu dalam mencegah penyebaran penyakit dan meningkatkan tingkat kesembuhan.</p>
+              <p>Tim kami terdiri dari ahli teknologi dan ilmuwan yang berpengalaman dalam bidang AI dan kesehatan. Dengan website deteksi dini melanoma berbasis AI yang kami kembangkan, kami berharap dapat membantu masyarakat dalam meningkatkan kualitas hidup dan kesehatan mereka.</p><a class="button button-primary" href="{{ route('login') }}">Login / Register</a>
             </div>
             <div class="col-md-6 col-lg-4">
               <!-- Thumb flat-->
               <article class="thumb-flat thumb-flat-modern"><img class="thumb-flat__image" src="images/medical-1-418x245.jpg" alt="" width="418" height="245"/>
                 <div class="thumb-flat__body">
-                  <p class="heading-6"><a href="index.html#">Our Mission</a></p>
-                  <p>We aim to provide compassionate, comprehensive, community health care that exceeds our customer's expectations and needs.</p><a class="button button-primary" href="index.html#">read more</a>
+                  <p class="heading-6"><a href="index.html#">Misi Kami</a></p>
+                  <p>Menyediakan platform yang mudah digunakan dan terjangkau bagi masyarakat untuk melakukan deteksi dini melanoma menggunakan teknologi AI.</p>
                 </div>
               </article>
             </div>
@@ -133,8 +132,8 @@
               <!-- Thumb flat-->
               <article class="thumb-flat thumb-flat-modern"><img class="thumb-flat__image" src="images/medical-2-418x245.jpg" alt="" width="418" height="245"/>
                 <div class="thumb-flat__body">
-                  <p class="heading-6"><a href="index.html#">Our Vision</a></p>
-                  <p>The vision of MedClinic is to be the medical services provider that people can trust and rely on regardless of their budget.</p><a class="button button-primary" href="index.html#">read more</a>
+                  <p class="heading-6"><a href="index.html#">Visi Kami</a></p>
+                  <p>Visi dari website deteksi dini melanoma dengan AI adalah untuk menyediakan solusi teknologi terdepan dalam mendeteksi melanoma pada tahap awal sehingga dapat membantu mencegah penyebaran penyakit dan meningkatkan tingkat kesembuhan.</p>
                 </div>
               </article>
             </div>
@@ -146,70 +145,10 @@
         <div class="container">
           <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
             <div class="col-xl-8 text-xl-start">
-              <h4><span class="fw-bold">MedClinic</span><span class="fw-normal">is Your #1 Medical Services Provider</span></h4>
-              <p>At our clinic, you can get a full range of health care services for you and your family.</p>
+              <h4><span class="fw-bold">Meldec</span><span class="fw-normal">adalah No #1 Deteksi Dini Melanoma</span></h4>
+              <p>Kami bekerja sama dengan komunitas medis dan ilmuwan untuk meningkatkan kemampuan teknologi AI dalam mendeteksi melanoma secara dini.</p>
             </div>
-            <div class="col-xl-2 text-xl-end"><a class="button button-primary" href="index.html#">Read More</a></div>
-          </div>
-        </div>
-      </section>
-      <section class="section-md bg-gray-lighter text-center" id="services">
-        <div class="container">
-          <div class="row justify-content-lg-center">
-            <div class="col-lg-10 col-xl-8">
-              <h4 class="heading-decorated">Our Services</h4>
-              <p>Our patients have access to a wide range of services right here on-site, as well as off-site through partnerships the Clinic has established. Besides offering great health care, our staff also provides high-quality diagnostics using the cutting-edge medical equipment. Feel free to learn more about our services below.</p>
-            </div>
-          </div>
-          <div class="row row-50">
-            <div class="col-md-6 col-lg-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle blurb-circle_centered">
-                <div class="blurb-circle__icon"><span class="icon linear-icon-pills"></span></div>
-                <p class="blurb__title">General Surgery</p>
-                <p>Our general surgeons focus on a variety of problems that can be treated with surgery.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle blurb-circle_centered">
-                <div class="blurb-circle__icon"><span class="icon linear-icon-first-aid"></span></div>
-                <p class="blurb__title">Ophthalmology Procedures</p>
-                <p>MedClinic’s ophthalmologists provide high-quality eye health procedures to our patients.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle blurb-circle_centered">
-                <div class="blurb-circle__icon"><span class="icon linear-icon-bandages"></span></div>
-                <p class="blurb__title">Outpatient Services</p>
-                <p>Our outpatient services cover the needs of patients who require follow-up care & check-ups.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle blurb-circle_centered">
-                <div class="blurb-circle__icon"><span class="icon linear-icon-ambulance"></span></div>
-                <p class="blurb__title">Radiology and Mammograms</p>
-                <p>We provide a wide variety of radiology services including X-ray and mammography.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle blurb-circle_centered">
-                <div class="blurb-circle__icon"><span class="icon linear-icon-shield"></span></div>
-                <p class="blurb__title">Respiratory Therapy</p>
-                <p>Our respiratory therapy services help patients breathe easy whether they're babies or adults.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle blurb-circle_centered">
-                <div class="blurb-circle__icon"><span class="icon linear-icon-beaker"></span></div>
-                <p class="blurb__title">Laboratory Services</p>
-                <p>We take great pride in providing the highest quality of laboratory services to our patients.</p>
-              </article>
-            </div>
+            <div class="col-xl-2 text-xl-end"><a class="button button-primary" href="{{ route('login') }}">Login / Register</a></div>
           </div>
         </div>
       </section>
@@ -387,12 +326,12 @@
       <!-- Meet Our Team-->
       <section class="section-md bg-default text-center" id="team">
         <div class="container">
-          <h4 class="heading-decorated">Meet Our Team</h4>
+          <h4 class="heading-decorated">Tim Kami</h4>
           <div class="row row-50 offset-top-1">
             <div class="col-md-6 col-lg-3">
               <!-- Thumb corporate-->
               <div class="thumb thumb-corporate">
-                <div class="thumb-corporate__main"><img src="images/team-medical-1-418x315.jpg" alt="" width="418" height="315"/>
+                <div class="thumb-corporate__main"><img src="images/doctor1.jpg" alt="" width="418" height="315"/>
                   <div class="thumb-corporate__overlay">
                     <ul class="list-inline-sm thumb-corporate__list">
                       <li><a class="icon-sm fa-facebook icon" href="index.html#"></a></li>
@@ -405,15 +344,15 @@
                   </div>
                 </div>
                 <div class="thumb-corporate__caption">
-                  <p class="thumb__title"><a href="index.html#" data-bs-toggle="modal" data-bs-target="#modalTeam1">Dr. Brian King</a></p>
-                  <p class="thumb__subtitle">Head Doctor, Neurology</p>
+                  <p class="thumb__title"><a href="index.html#" data-bs-toggle="modal" data-bs-target="#modalTeam1">Wisnu Dewa Saputra</a></p>
+                  <p class="thumb__subtitle">AI Engineer</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
               <!-- Thumb corporate-->
               <div class="thumb thumb-corporate">
-                <div class="thumb-corporate__main"><img src="images/team-medical-2-418x315.jpg" alt="" width="418" height="315"/>
+                <div class="thumb-corporate__main"><img src="images/doctor1.jpg" alt="" width="418" height="315"/>
                   <div class="thumb-corporate__overlay">
                     <ul class="list-inline-sm thumb-corporate__list">
                       <li><a class="icon-sm fa-facebook icon" href="index.html#"></a></li>
@@ -426,15 +365,15 @@
                   </div>
                 </div>
                 <div class="thumb-corporate__caption">
-                  <p class="thumb__title"><a href="index.html#" data-bs-toggle="modal" data-bs-target="#modalTeam2">Dr. Amanda Smith</a></p>
-                  <p class="thumb__subtitle">Diagnostics</p>
+                  <p class="thumb__title"><a href="index.html#" data-bs-toggle="modal" data-bs-target="#modalTeam1">Wisnu Dewa Saputra</a></p>
+                  <p class="thumb__subtitle">Frontend Engineer</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
               <!-- Thumb corporate-->
               <div class="thumb thumb-corporate">
-                <div class="thumb-corporate__main"><img src="images/team-medical-3-418x315.jpg" alt="" width="418" height="315"/>
+                <div class="thumb-corporate__main"><img src="images/doctor1.jpg" alt="" width="418" height="315"/>
                   <div class="thumb-corporate__overlay">
                     <ul class="list-inline-sm thumb-corporate__list">
                       <li><a class="icon-sm fa-facebook icon" href="index.html#"></a></li>
@@ -447,15 +386,15 @@
                   </div>
                 </div>
                 <div class="thumb-corporate__caption">
-                  <p class="thumb__title"><a href="index.html#" data-bs-toggle="modal" data-bs-target="#modalTeam3">Dr. George Nelson</a></p>
-                  <p class="thumb__subtitle">Ophthalmology</p>
+                  <p class="thumb__title"><a href="index.html#" data-bs-toggle="modal" data-bs-target="#modalTeam1">Wisnu Dewa Saputra</a></p>
+                  <p class="thumb__subtitle">Backend Engineer</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
               <!-- Thumb corporate-->
               <div class="thumb thumb-corporate">
-                <div class="thumb-corporate__main"><img src="images/team-medical-4-418x315.jpg" alt="" width="418" height="315"/>
+                <div class="thumb-corporate__main"><img src="images/doctor1.jpg" alt="" width="418" height="315"/>
                   <div class="thumb-corporate__overlay">
                     <ul class="list-inline-sm thumb-corporate__list">
                       <li><a class="icon-sm fa-facebook icon" href="index.html#"></a></li>
@@ -468,8 +407,8 @@
                   </div>
                 </div>
                 <div class="thumb-corporate__caption">
-                  <p class="thumb__title"><a href="index.html#" data-bs-toggle="modal" data-bs-target="#modalTeam4">Dr. Sam Wilson</a></p>
-                  <p class="thumb__subtitle">Traumatology</p>
+                  <p class="thumb__title"><a href="index.html#" data-bs-toggle="modal" data-bs-target="#modalTeam1">Wisnu Dewa Saputra</a></p>
+                  <p class="thumb__subtitle">Project Manager</p>
                 </div>
               </div>
             </div>
@@ -482,11 +421,12 @@
         <div class="container">
           <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
             <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
-              <h6>About</h6>
-              <p>MedClinic specializes in a wide variety of health issues, related to absolutely any age or severity level. Our seasoned team of highly trained physicians and practical nurses will be glad to help you 24/7! Our physicians, nurses, doctors, and office staff work together to meet the needs of your family and be your first choice for health care in the area.</p>
+              <h6>Tentang</h6>
+              <p>Website deteksi dini melanoma berbasis AI yang kami kembangkan merupakan platform yang menyediakan solusi teknologi terdepan dalam mendeteksi melanoma pada tahap awal. Kami menyediakan fitur yang mudah digunakan dan terjangkau bagi masyarakat, sehingga dapat membantu dalam mencegah penyebaran penyakit dan meningkatkan tingkat kesembuhan.
+            </p>
             </div>
             <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
-              <h6>Contacts</h6>
+              <h6>Kontak</h6>
               <ul class="list-xs">
                 <li>
                   <dl class="list-terms-minimal">

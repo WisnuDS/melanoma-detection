@@ -7,7 +7,7 @@
       <!--begin::Header Logo-->
       <div class="header-logo">
         <a href="{{ auth()->user()->isA('user') ? route('user.dashboard') : (auth()->user()->isA('admin') ? route('admin.dashboard') : route('doctor.dashboard')) }}">
-          <img width="150px" alt="Logo" src="{{asset("/media/logos/logo-fix-crop.png")}}" />
+          <img width="110px" alt="Logo" src="{{asset("/media/logos/logo-fix-crop.png")}}" />
         </a>
       </div>
       <!--end::Header Logo-->
