@@ -48,7 +48,7 @@
 									<div class="text-center pb-8">
 										<h2 class="font-weight-bolder text-dark font-size-h2 font-size-h1-lg">Sign In</h2>
 										<span class="text-muted font-weight-bold font-size-h4">Or
-										<a href="" class="text-primary font-weight-bolder" id="kt_login_signup">Create An Account</a></span>
+										<a href="" class="text-primary font-weight-bolder" id="kt_login_signup">Buat Akun Baru</a></span>
 									</div>
 									<!--end::Title-->
 									<!--begin::Form group-->
@@ -82,7 +82,7 @@
 									<!--begin::Title-->
 									<div class="text-center pb-8">
 										<h2 class="font-weight-bolder text-dark font-size-h2 font-size-h1-lg">Sign Up</h2>
-										<p class="text-muted font-weight-bold font-size-h4">Enter your details to create your account</p>
+										<p class="text-muted font-weight-bold font-size-h4">Masukan detail lengkap data anda</p>
 									</div>
 									<!--end::Title-->
 									<!--begin::Form group-->
@@ -173,13 +173,12 @@
 				<div class="content order-1 order-lg-2 d-flex flex-column w-100 pb-0" style="background-color: #B1DCED;">
 					<!--begin::Title-->
 					<div class="d-flex flex-column justify-content-center text-center pt-lg-40 pt-md-5 pt-sm-5 px-lg-0 pt-5 px-7">
-						<h3 class="display4 font-weight-bolder my-7 text-dark" style="color: #986923;">Amazing Wireframes</h3>
-						<p class="font-weight-bolder font-size-h2-md font-size-lg text-dark opacity-70">User Experience &amp; Interface Design, Product Strategy
-						<br />Web Application SaaS Solutions</p>
+						<h3 class="display4 font-weight-bolder my-7 text-dark" style="color: #986923;">Selamat Datang</h3>
+						<p class="font-weight-bolder font-size-h3-md font-size-lg text-dark opacity-70">Silahkan sign in untuk masuk ke aplikasi</p>
 					</div>
 					<!--end::Title-->
 					<!--begin::Image-->
-					<div class="content-img d-flex flex-row-fluid bgi-no-repeat bgi-position-y-bottom bgi-position-x-center" style="background-image: url({{asset("/media/svg/illustrations/login-visual-2.svg")}});"></div>
+					<div class="content-img d-flex flex-row-fluid bgi-no-repeat bgi-position-y-bottom bgi-position-x-center" style="background-image: url({{asset("/media/svg/illustrations/login-visual-9.svg")}});"></div>
 					<!--end::Image-->
 				</div>
 				<!--end::Content-->
