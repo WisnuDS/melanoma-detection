@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-md-4">
         <!--begin::Stats Widget 12-->
-        <div class="card card-custom card-stretch card-stretch-half gutter-b">
+        <div class="card card-custom card-stretch gutter-b">
           <!--begin::Body-->
           <div class="card-body p-0">
             <div class="d-flex align-items-center justify-content-between card-spacer flex-grow-1">
@@ -30,7 +30,7 @@
                 <span class="text-muted font-weight-bold mt-2">Belum Didiagnosa</span>
               </div>
             </div>
-            <div class="card-rounded-bottom" data-color="primary" style="height: 150px"></div>
+            <div class="card-rounded-bottom" data-color="primary"></div>
           </div>
           <!--end::Body-->
         </div>
@@ -38,7 +38,7 @@
       </div>
       <div class="col-md-4">
         <!--begin::Stats Widget 12-->
-        <div class="card card-custom card-stretch card-stretch-half gutter-b">
+        <div class="card card-custom card-stretch gutter-b">
           <!--begin::Body-->
           <div class="card-body p-0">
             <div class="d-flex align-items-center justify-content-between card-spacer flex-grow-1">
@@ -62,7 +62,7 @@
                 <span class="text-muted font-weight-bold mt-2">Melanoma</span>
               </div>
             </div>
-            <div class="card-rounded-bottom" data-color="primary" style="height: 150px"></div>
+            <div class="card-rounded-bottom" data-color="primary"></div>
           </div>
           <!--end::Body-->
         </div>
@@ -70,7 +70,7 @@
       </div>
       <div class="col-md-4">
         <!--begin::Stats Widget 12-->
-        <div class="card card-custom card-stretch card-stretch-half gutter-b">
+        <div class="card card-custom card-stretch gutter-b">
           <!--begin::Body-->
           <div class="card-body p-0">
             <div class="d-flex align-items-center justify-content-between card-spacer flex-grow-1">
@@ -90,11 +90,38 @@
                 <span class="text-muted font-weight-bold mt-2">Bukan Melanoma</span>
               </div>
             </div>
-            <div class="card-rounded-bottom" data-color="primary" style="height: 150px"></div>
+            <div class="card-rounded-bottom" data-color="primary"></div>
           </div>
           <!--end::Body-->
         </div>
         <!--end::Stats Widget 12-->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-12">
+        <!--begin::Charts Widget 1-->
+        <div class="card card-custom card-stretch gutter-b">
+          <!--begin::Header-->
+          <div class="card-header h-auto border-0">
+            <!--begin::Title-->
+            <div class="card-title py-5">
+              <h3 class="card-label">
+                <span class="d-block text-dark font-weight-bolder">Riwayat Perhari</span>
+                <span class="d-block text-muted mt-2 font-size-sm">Riwayat Diagnosis Dalam Bentuk Diagram</span>
+              </h3>
+            </div>
+            <!--end::Title-->
+          </div>
+          <!--end::Header-->
+          <!--begin::Body-->
+          <div class="card-body">
+            <!--begin::Chart-->
+            <div id="kt_charts_widget_1_chart"></div>
+            <!--end::Chart-->
+          </div>
+          <!--end::Body-->
+        </div>
+        <!--end::Charts Widget 1-->
       </div>
     </div>
   </div>

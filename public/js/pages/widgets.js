@@ -860,7 +860,7 @@ var KTWidgets = function() {
         if (!element) {
             return;
         }
-
+        
         var options = {
             series: [{
                 name: 'Net Profit',
